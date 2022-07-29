@@ -10,27 +10,24 @@ int main() {
     double c;
     double d;
 
-    do {
-        printf("Enter the coefficient a: ");
-        if (scanf("%lf", &a) != 1) {
-            printf("Wrong value");
-            return 0;
-        }
+    printf("Enter the coefficient a: ");
+    if (scanf("%lf", &a) != 1) {
+        printf("Please enter a correct value. \n");
+        return 0;
+    }
 
-        printf("Enter the coefficient b: ");
-        if (scanf("%lf", &b) != 1) {
-            printf("Wrong value");
-            return 0;
-        }
+    printf("Enter the coefficient b: ");
+    if (scanf("%lf", &b) != 1) {
+        printf("Please enter a correct value. \n");
+        return 0;
+    }
 
-        printf("Enter the coefficient c: ");
-        if (scanf("%lf", &c) != 1) {
-            printf("Wrong value");
-            return 0;
-        } else {
-            break;
-        }
-    } while (true);
+    printf("Enter the coefficient c: ");
+    if (scanf("%lf", &c) != 1) {
+        printf("Please enter a correct value. \n");
+        return 0;
+    }
+
 
     d = pow(b, 2) - (4 * a * c);
 
