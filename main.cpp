@@ -11,19 +11,19 @@ int main() {
     double d;
 
     do {
-        printf("Enter coefficient a: ");
+        printf("Enter the coefficient a: ");
         if (scanf("%lf", &a) != 1) {
             printf("Wrong value");
             return 0;
         }
 
-        printf("Enter coefficient b: ");
+        printf("Enter the coefficient b: ");
         if (scanf("%lf", &b) != 1) {
             printf("Wrong value");
             return 0;
         }
 
-        printf("Enter coefficient c: ");
+        printf("Enter the coefficient c: ");
         if (scanf("%lf", &c) != 1) {
             printf("Wrong value");
             return 0;
