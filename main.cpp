@@ -1,6 +1,7 @@
-#include <iostream>
-#include <D:\Projects\C++\libcs50-11.0.1\src\cs50.h>
+#include <istream>
 #include <cmath>
+#include "/libcs50-11.0.1/src/cs50.h"
+
 using namespace std;
 
 int main() {
@@ -9,7 +10,7 @@ int main() {
     double b = get_double("Enter coefficient b: ");
     double c = get_double("Enter coefficient c: ");
 
-    double d = 0;
+    double d;
 
     d = pow(b, 2) - 4 * a * c;
 
