@@ -1,0 +1,3 @@
+D:/Projects/C++/Quadratic Function/cmake-build-debug/CMakeFiles/Quadratic_Function.dir
+D:/Projects/C++/Quadratic Function/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Projects/C++/Quadratic Function/cmake-build-debug/CMakeFiles/rebuild_cache.dir
