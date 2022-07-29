@@ -64,7 +64,7 @@ build CMakeFiles/Quadratic_Function.dir/main.cpp.obj: CXX_COMPILER__Quadratic_Fu
 # Link the executable Quadratic_Function.exe
 
 build Quadratic_Function.exe: CXX_EXECUTABLE_LINKER__Quadratic_Function_Debug CMakeFiles/Quadratic_Function.dir/main.cpp.obj
-  FLAGS = -g -lcs50
+  FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Quadratic_Function.dir
   POST_BUILD = cd .
