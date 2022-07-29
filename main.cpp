@@ -1,5 +1,3 @@
-//https://San-43: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@github.com/San-43/Quadric-Function.git
-
 #include <iostream>
 #include <D:\Projects\C++\libcs50-11.0.1\src\cs50.h>
 #include <cmath>
