@@ -1,46 +1,65 @@
-#include <istream>
 #include <cmath>
+#include <cstdio>
+#include <locale>
+#include <cstdlib>
 
-using namespace std;
+void solution (double a, double b, double c);
 
 int main() {
 
     double a;
     double b;
     double c;
+
+    setlocale(LC_CTYPE, "spanish");
+    system("cls");
+    system("color 02");
+
+    printf("*** ECUACIONES DE SEGUNDO GRADO ***\n");
+    printf("*** POR MEDIO DE LA FÓRMULA GENERAL ***\n");
+
+    printf("Ingrese el coeficiente a: ");
+    if (scanf("%lf", &a) != 1) {
+        if (a == 0) {
+            printf("División por cero");
+            return 0;
+        }
+        printf("Por favor introduzca un valor correcto. \n");
+        return 0;
+    }
+
+    printf("\nIngrese el coeficiente b: ");
+    if (scanf("%lf", &b) != 1) {
+        printf("Por favor introduzca un valor correcto. \n");
+        return 0;
+    }
+
+    printf("\n Ingrese el coeficiente c: ");
+    if (scanf("%lf", &c) != 1) {
+        printf("Por favor introduzca un valor correcto. \n");
+        return 0;
+    }
+
+    solution(a, b ,c);
+}
+
+void solution (double a, double b, double c) {
     double d;
 
-    printf("Enter the coefficient a: ");
-    if (scanf("%lf", &a) != 1) {
-        printf("Please enter a correct value. \n");
-        return 0;
-    }
-
-    printf("Enter the coefficient b: ");
-    if (scanf("%lf", &b) != 1) {
-        printf("Please enter a correct value. \n");
-        return 0;
-    }
-
-    printf("Enter the coefficient c: ");
-    if (scanf("%lf", &c) != 1) {
-        printf("Please enter a correct value. \n");
-        return 0;
-    }
-
-
     d = pow(b, 2) - (4 * a * c);
+    printf("\nDiscriminante = %.1f\n\n", d);
 
     if (d > 0) {
-        double x1 = (b * -1 + sqrt(d)) / (2 * a);
-        double x2 = (b * -1 - sqrt(d)) / (2 * a);
+        double x1 = (-b + sqrt(d)) / (2 * a);
+        double x2 = (-b - sqrt(d)) / (2 * a);
 
-        printf("Two solutions: %.1f and %.1f", x1, x2);
+        printf("***** Dos soluciones: %.2f and %.2f *****\n", x1, x2);
     } else if (d < 0) {
         d = d * -1;
         d = sqrt(d) / (2 * a);
-        printf("Two complex solutions: %.1f + %.1f%s and %.1f - %.1f%s", -b/(2 * a), d, "i", -b/(2 * a), d, "i");
+        printf("***** Dos soluciones complejas: %.2f + %.2f%s and %.2f - %.2f%s *****\n", -b / (2 * a), d, "i", -b / (2 * a), d, "i");
     } else {
-        printf("One solution: %.1f", (b * -1)/(2 * a));
+        printf("***** Una solución: %.2f *****\n", -b / (2 * a));
     }
 }
+
